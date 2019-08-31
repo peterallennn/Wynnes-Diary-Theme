@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+	#logo a {
+		width: 332px;
+		height: 77px;
+		margin: 27px 0 0 92px;
+		display: block;
+	}
+
+	#search {
+		position: absolute;
+		top: 30px;
+		left: 622px;
+
+		input.text {
+			border: 1px solid #858585;
+			position: relative;
+			padding: 10px;
+			width: 200px;
+			height: 36px;
+			color: #363535;
+			background: #EAF0F0;
+			font-size: 1.1em;
+
+			&:focus {
+				border: 1px solid $brand-color;
+			}
+		}
+
+		input[type="submit"] {
+			background: $brand-color;
+			padding: 10px;
+			border: none;
+			color: #fff;
+			height: 36px;
+			border: 1px solid darken($brand-color, 5%);
+			position: relative;
+			top: -1px;
+			cursor: pointer;
+
+			&:hover {
+				background: lighten($brand-color, 5%);
+			}
+		}
+	}
+
+	#back {
+		font-family: "Times New Roman", Times, serif;
+		color: #5F2020;
+		font-weight: bold;
+		text-decoration: none;
+		position: absolute;
+		top: 140px;
+		left: 149px;
+	}
+
+	#back:hover {
+		text-decoration: underline;
+	}
+
+	.displayNone {
+		display: none;
+	}
+}

@@ -1,0 +1,67 @@
+body.single-post, body.page:not(.home), body.search-results {
+  background: url("img/layouts/bg-single-v2.jpg") no-repeat, url("img/layouts/bg-single-v2-extension.jpg") repeat-y; }
+  body.single-post .post-body-bottom, body.page:not(.home) .post-body-bottom, body.search-results .post-body-bottom {
+    background: url("img/layouts/bg-single-v2-bottom.jpg") no-repeat;
+    width: 1017px;
+    height: 37px;
+    display: block; }
+  body.single-post .post-body, body.page:not(.home) .post-body, body.search-results .post-body {
+    width: 757px;
+    margin: 0 0 0 105px;
+    padding: 40px 100px; }
+    body.single-post .post-body .heading, body.page:not(.home) .post-body .heading, body.search-results .post-body .heading {
+      margin-bottom: 40px; }
+      body.single-post .post-body .heading h1, body.single-post .post-body .heading a, body.page:not(.home) .post-body .heading h1, body.page:not(.home) .post-body .heading a, body.search-results .post-body .heading h1, body.search-results .post-body .heading a {
+        margin: 0;
+        line-height: 1; }
+      body.single-post .post-body .heading a, body.page:not(.home) .post-body .heading a, body.search-results .post-body .heading a {
+        font-size: 1.2em; }
+  body.single-post #content_right #family, body.page:not(.home) #content_right #family, body.search-results #content_right #family {
+    width: 90px;
+    height: 70px;
+    top: -12px;
+    left: 59px; }
+  body.single-post #content_right #xmas, body.page:not(.home) #content_right #xmas, body.search-results #content_right #xmas {
+    width: 110px;
+    height: 60px;
+    left: 59px;
+    top: 50px; }
+  body.single-post #content_right #travel, body.page:not(.home) #content_right #travel, body.search-results #content_right #travel {
+    width: 91px;
+    height: 64px;
+    left: 59px;
+    top: 112px; }
+  body.single-post #content_right #love, body.page:not(.home) #content_right #love, body.search-results #content_right #love {
+    width: 83px;
+    height: 59px;
+    left: 59px;
+    top: 174px; }
+  body.single-post #content_right #fashion, body.page:not(.home) #content_right #fashion, body.search-results #content_right #fashion {
+    width: 93px;
+    height: 57px;
+    left: 59px;
+    top: 229px; }
+  body.single-post #content_right #editor, body.page:not(.home) #content_right #editor, body.search-results #content_right #editor {
+    width: 94px;
+    height: 67px;
+    left: 59px;
+    top: 292px; }
+  body.single-post #footer, body.page:not(.home) #footer, body.search-results #footer {
+    top: auto;
+    bottom: 0; }
+    body.single-post #footer p, body.page:not(.home) #footer p, body.search-results #footer p {
+      margin: 0;
+      position: relative;
+      top: -6px; }
+  body.single-post .search-results-body, body.page:not(.home) .search-results-body, body.search-results .search-results-body {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    body.single-post .search-results-body li, body.page:not(.home) .search-results-body li, body.search-results .search-results-body li {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+      body.single-post .search-results-body li p:last-child, body.page:not(.home) .search-results-body li p:last-child, body.search-results .search-results-body li p:last-child {
+        margin-bottom: 0; }
+      body.single-post .search-results-body li h4, body.page:not(.home) .search-results-body li h4, body.search-results .search-results-body li h4 {
+        margin-top: 0; }

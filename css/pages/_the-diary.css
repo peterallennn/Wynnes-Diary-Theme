@@ -1,0 +1,43 @@
+body.the-diary {
+  background: #D9D5CF url(../viewer_layout/bg_main.jpg) no-repeat;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+  body.the-diary #content_left {
+    position: relative;
+    left: 163px;
+    float: left;
+    width: 650px;
+    margin-top: 8px; }
+  body.the-diary #content_right {
+    position: absolute;
+    top: 125px;
+    left: 803px;
+    height: 500px;
+    width: 180px; }
+  body.the-diary #logo a {
+    width: 332px;
+    height: 77px;
+    margin: 27px 0 0 92px;
+    display: block; }
+  body.the-diary #search {
+    position: absolute;
+    top: 62px;
+    left: 614px; }
+  body.the-diary #search input.text {
+    border: 1px solid #858585;
+    position: relative;
+    padding: 4px 14px 4px 10px;
+    height: 24px;
+    width: 180px;
+    font-style: italic;
+    color: #363535;
+    background: #EAF0F0;
+    top: -8px; }
+  body.the-diary #footer {
+    color: #363535;
+    position: absolute;
+    left: 220px;
+    top: 694px; }
+  body.the-diary #footer a {
+    color: #6A2424; }

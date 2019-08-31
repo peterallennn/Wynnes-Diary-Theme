@@ -1,0 +1,236 @@
+body.blog, body.category { 
+	background: #D9D5CF url('img/layouts/bg-main-modifiedv2.jpg') no-repeat;
+	margin: 0;
+
+	#content_left {
+		position: relative;
+		left: 130px;
+		float: left;
+		width: 650px;
+		margin-top: 8px;
+	
+		.intro {
+			padding: 50px;
+		}
+
+		.years-navigation {
+			padding: 0 30px 0 30px;
+			margin-bottom: 10px;
+			margin-top: -7px;
+
+			.frame {
+				width: 100%;
+			}
+
+			.years-navigation-list {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					font-family: Georgia;
+					font-size: 1.1em;
+					text-align: center;
+					width: 65px;
+					float: left;
+					padding: 10px 0;
+
+					a {
+						color: $brand-color;
+					}
+
+					&.year-active:after {
+						content: '';
+						background-image: url("img/nav-active-circle.png");
+					    width: 65px;
+					    height: 30px;
+					    display: block;
+					    background-size: contain;
+					    position: absolute;
+					    top: 9px;
+					}
+				}
+
+				.owl-item {
+					opacity: 0;
+					transition: all 750ms ease;
+				}
+
+				.owl-item.active {
+					opacity: 1;
+					transition: all 750ms ease;
+				}
+			}
+
+			.controls {
+				span {
+					font-size: 1.8em;
+					color: $brand-color;
+					position: absolute;
+					top: 1px;
+					cursor: pointer;
+					padding: 10px;
+					line-height: 0;
+					cursor: pointer;
+
+					&:hover {
+						text-decoration: none;
+					}
+				
+					&.nextPage {
+						right: 6px;
+					}
+
+					&.prevPage {
+						left: 6px;
+					}
+				}
+			}
+
+			.scrollbar {
+				margin: 4px -32px 0 -41px;
+				height: 3px;
+				line-height: 0;
+
+				.handle {
+					width: 100px;
+					height: 100%;
+					background: $brand-color;
+					cursor: pointer;
+					opacity: .4;
+
+					.mousearea {
+						position: absolute;
+						top: -4px;
+						left: 0;
+						width: 100%;
+						height: 10px;
+					}
+				}
+			}
+		}
+
+		.months-navigation {
+			padding: 0 67px;
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				position: relative;
+				top: -5px;
+				opacity: 0;
+			}
+
+			li {
+				float: left;
+				padding: 0 10px;
+				font-family: "Georgia";
+				font-size: 1.1em;
+				opacity: .4;
+
+				&.active {
+					font-weight: bold;
+				}
+
+				&.has-posts {
+					opacity: 1;
+				}
+
+				a {
+					color: $brand-color;
+				}
+			}
+
+		}
+	}
+
+	.diary-strip {
+		overflow-x: auto;
+    	white-space: nowrap;
+    	margin: 30px -12px 40px 30px;
+
+		.diary-strip-post {
+			width: 230px;
+			display: inline-block;
+			vertical-align: top;
+			white-space: normal;
+			margin-left: -6px;
+			opacity: 0;
+			position: relative;
+
+			&.month-description {
+				margin-left: 0;
+			}
+
+			.post-header {
+				background-image: url('img/strip/diary.gif');
+				width: 230px;
+				height: 21px;
+				display: block;
+				border-left: 2.5px solid #e0dcce;
+				border-right: 2.5px solid #e0dcce;
+			}
+
+			.post-content {
+				width: 230px;
+				border-left: 2.5px solid #e0dcce;
+				border-right: 2.5px solid #e0dcce;
+				padding: 10px 10px 20px 10px;
+				display: block;
+
+				*:first-child {
+					margin-top: 10px;
+					font-style: italic;
+				}
+
+				*:last-child {
+					margin-bottom: 0;
+				}
+
+				.featured-image {
+					display: block;
+					text-align: center;
+
+					img {
+						width: auto;
+						max-height: 200px;
+						max-width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+
+			.post-footer {
+				border-left: 2.5px solid #e0dcce;
+				border-right: 2.5px solid #e0dcce; 
+
+				span, a {
+					width: 225.2px;
+					height: 29px;
+					display: block;
+					background-size: contain;
+				}
+
+				.blank  {
+					background-image: url('img/strip/bottom-pane-blank.gif');
+				}
+
+				.view-bigger  {
+					background-image: url('img/strip/bottom-pane-view-bigger.gif');
+				}
+
+				.more-info  {
+					background-image: url('img/strip/bottom-pane-more-info.gif');
+				}
+			}
+		}
+
+	}
+}
+
+.nicescroll-rails {
+	margin-top: 11px;
+	margin-left: -1px;
+}

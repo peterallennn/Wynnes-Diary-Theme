@@ -1,0 +1,32 @@
+body {
+	background:#D9D5CF url(viewer_layout/bg_home.jpg) no-repeat; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:15px;
+}
+
+#home {
+	width:369px;
+	margin:368px 0 0 436px;
+	text-align:center;
+	color:#FFF;
+}
+
+a { 
+	color:#6A2424;
+}
+
+a#open { 
+	text-decoration:none; 
+	color:#FFF; 
+	font-size:17px;
+	position:absolute;
+	top:491px;
+	left:580px;
+	display:block;
+	width:90px;
+}
+
+a#open:hover {
+	text-decoration:underline;
+
+}
