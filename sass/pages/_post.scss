@@ -13,6 +13,16 @@ body.single-post, body.page:not(.home), body.search-results, body.search-no-resu
 		margin: 0 0 0 105px;
 		padding: 40px 100px;
 
+		img {
+			max-width: 100% !important;
+			height: auto !important;
+		}
+
+		figure.wp-caption {
+			margin: 0 !important;
+			width: auto !important;
+		}
+
 		.heading {
 			margin-bottom: 40px;
 
