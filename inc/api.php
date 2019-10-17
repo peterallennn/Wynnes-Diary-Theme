@@ -27,10 +27,12 @@ function diary_get_months_for_year($data)
 	for($m=1; $m<=12; ++$m) {
 	    $month = date('F', mktime(0, 0, 0, $m, 1));
 	    $month_term = get_term_by('slug', $month . '-' . $year->name, 'category');
+
 	    $months[] = [
 	    	'month' => $month,
 	    	'month_shorthand' => date('M', mktime(0, 0, 0, $m, 1)),
 	    	'post_count' => ($month_term && !in_array($month_term->term_id, $hidden_months) ? $month_term->count : 0),
+	    	'month_description' => (isset($month_term->description) ? $month_term->description : null),
 	    	'id' => (!empty($month_term) ? $month_term->term_id : null)
 	    ];
 	}

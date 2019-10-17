@@ -103,7 +103,7 @@ function getMonths(yearID)
 		for (var m = 0; m < months.length; m++) {
 			var month = months[m];
 			var month_shorthand = month.month_shorthand;
-			if(month.id && month.post_count > 0) {
+			if(month.id && month.description != '' || month.id && month.post_count > 0) {
 				var html = '<li class="' + month_shorthand.toLowerCase() + ' has-posts"><a href="#" class="get-month-strip" data-month-id="' + month.id + '" data-month="' + month_shorthand + '">' + month_shorthand + '</a></li>'
 			} else {
 				var html = '<li class="' + month_shorthand.toLowerCase() + '">' + month_shorthand + '</li>';
