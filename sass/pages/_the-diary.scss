@@ -179,6 +179,10 @@ body.blog, body.category {
 				padding: 10px 10px 20px 10px;
 				display: block;
 
+				br {
+					display: none;
+				}
+
 				*:first-child {
 					margin-top: 10px;
 					font-style: italic;
