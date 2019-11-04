@@ -107,7 +107,11 @@ function getMonths(yearID)
 			var empty_month_html = '<li class="' + month_shorthand.toLowerCase() + '">' + month_shorthand + '</li>';
 			var month_has_posts_html = '<li class="' + month_shorthand.toLowerCase() + ' has-posts"><a href="#" class="get-month-strip" data-month-id="' + month.id + '" data-month="' + month_shorthand + '">' + month_shorthand + '</a></li>';
 
-			var description = month.description;
+			if (typeof(month.description) !== 'undefined') {
+				var description = month.description;
+			} else {
+				var description = '';
+			}
 
 			if(month.hidden) {
 				var html = empty_month_html;
