@@ -31,9 +31,10 @@ function diary_get_months_for_year($data)
 	    $months[] = [
 	    	'month' => $month,
 	    	'month_shorthand' => date('M', mktime(0, 0, 0, $m, 1)),
-	    	'post_count' => ($month_term && !in_array($month_term->term_id, $hidden_months) ? $month_term->count : 0),
-	    	'month_description' => (isset($month_term->description) ? $month_term->description : null),
-	    	'id' => (!empty($month_term) ? $month_term->term_id : null)
+	    	'post_count' => ($month_term ? $month_term->count : 0),
+	    	'month_description' => (isset($month_term->description) && !empty($month_term->description)) ? $month_term->description : null),
+	    	'id' => (!empty($month_term) ? $month_term->term_id : null),
+	    	'hidden' => ($month_term && in_array($month_term->term_id, $hidden_months) ? true : false),
 	    ];
 	}
 	return $months;
